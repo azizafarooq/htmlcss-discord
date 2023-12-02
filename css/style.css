@@ -1,0 +1,224 @@
+/* ## RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+}
+  
+  /* ### UTILS */
+  
+  .container {
+    max-width: 1080px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  
+  .w-25 {
+    width: 25%;
+  }
+
+  .btn{
+    display: inline-block;
+    padding: 12px 20Px;
+    font-size: 1.4em;
+    border-radius: 50px;
+    background-color:white;
+    color: #23272a;
+  }
+  
+  .btn .btn-small{
+    padding: 7px 10px;
+    font-size: 1em;
+  }
+
+   .btn-secondary{
+    color: white;
+    background-color: #23272a;
+    margin: 0 20px;
+  }
+
+  
+  /* ### PAGE */
+  
+  /* ## HEADER */
+  
+  .header {
+    height: 80px;
+    background-color: hsl(223.54deg 73.84% 53.53%);
+  }
+  
+  .header__logo .logo{
+    display: block;
+}
+
+.header > .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-height: 90px;
+   
+  }
+  
+  .header > .container > * {
+    flex-basis: 200px;
+    padding: 10px;
+    
+  }
+
+  .header__login{
+    text-align: center;
+  }
+
+  .header__nav li{
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  .header__nav ul{
+    list-style: none;
+    text-align: center;
+  }
+  
+  .header > .container > .header__nav {
+    flex-grow: 1;
+  }
+  
+  /* ## JUMBOTRON */
+  
+  .jumbotron {
+    padding: 3rem 0;
+    background-image: url("../css/img/jumbo.png");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .jumbotron .jumbotron__content {
+    width: 800px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+  }
+
+  .jumbotron__title{
+    font-size: 50px;
+    padding:25px;
+  }
+  
+  .jumbotron__paragraph{
+    padding:20px;
+    line-height: 2em;
+  }
+
+  /* ## ROWS SECTION */
+  
+  main > section {
+    padding: 3rem 0;
+  }
+  
+  main > section:nth-of-type(odd) {
+    background-color: white;
+  }
+  
+  main > section:nth-of-type(even) {
+    background-color: #d3d3d3;
+  }
+  
+  main > section > .container {
+    display: flex;
+  }
+  
+  main > section:nth-of-type(even) > .container {
+    flex-direction: row-reverse;
+  }
+  
+  
+  main > section .col-big {
+    flex-basis: 60%;
+  }
+  
+  main > section .col-small {
+    flex-basis: 40%;
+  }
+
+  #col-small-heading{
+    font-size: 45px;
+  }
+
+  .col-small > p{
+    line-height: 27px;
+  }
+  
+  main > .download > .container {
+    display: block;
+  }
+  
+  main > .download .col {
+    /* debug */
+    height: 800px;
+    background-color: #228b22;
+    border: 2px dashed black;
+  }
+  
+  /* ## FOOTER */
+  
+  .footer {
+    background-color: #23272a;
+    padding-top: 10px;
+  }
+  
+  .footer .upper-footer {
+    display: flex;
+  
+    padding-bottom: 2rem;
+    border-bottom: 1px solid white;
+    margin-bottom: 2rem;
+  }
+  
+  .footer .upper-footer > .col-small {
+    width: 30%;
+  
+    /* debug */
+    height: 500px;
+    background-color: #f08080;
+    border: 2px dashed black;
+  }
+  
+  .footer .upper-footer > .col-big {
+    width: 70%;
+    display: flex;
+  
+    /* debug */
+    height: 500px;
+    background-color: #20b2aa;
+    border: 2px dashed black;
+  }
+  
+  .footer .col-big > .w-25 {
+    border: 2px dashed white;
+  }
+  
+  .footer .bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    /* debug */
+    height: 100px;
+    background-color: #7fffd4;
+  }
+  
+  .bottom-footer > .logo,
+  .bottom-footer > .button {
+    padding: 5px 10px;
+  
+    /* debug */
+    background-color: #fdb5bf;
+    border: 2px dashed black;
+  }
